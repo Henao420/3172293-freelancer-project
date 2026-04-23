@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!navbarElement) return;
         
         fetch("/views/components/navbar.html")
+        
                 // La respuesta la convierte a texto plano
             .then(response => response.text())
 
                 // Inserta el contenido html del navbar en el contenedor correspondiente
-
             .then(data => {
                 navbarElement.innerHTML = data;
                 
